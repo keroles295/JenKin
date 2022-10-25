@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         //glue is where we find implementations for gherkin steps
         //we provide the path of package where we defined all the steps
         glue = "steps",
-        plugin = {"pretty"}
+        plugin = {"pretty", "json:target/cucumber.json"}
 
         //rerun plugin is going to capture all the scenarios which were failed during execution
 

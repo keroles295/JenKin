@@ -29,7 +29,7 @@ Feature: API workflow resource
     And the employee created contains key "Message" and value "Employee Created"
     And the employee id "Employee.employee_id" is stored as global variable
 
-  @update
+  @update1
   Scenario: Creating an employee using more dynamic payload
     Given a request is prepared for creating an employee via more dynamic payload "azeddine" , "sterling" , "ms" , "M" , "2012-09-14" , "normal" , "QA Engineer"
     When a POST call is made to create an employee
@@ -37,7 +37,7 @@ Feature: API workflow resource
     And the employee created contains key "Message" and value "Employee Created"
     And the employee id "Employee.employee_id" is stored as global variable
 
-   @update
+   @update2
    Scenario: updating the employee details
      Given a request is prepared for updating an employee
      When a PUT call is made to update the employee

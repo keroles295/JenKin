@@ -36,13 +36,13 @@ public class CommonMethods extends PageInitializer {
 //                options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 //                options.addArguments("--no-sandbox"); // Bypass OS security model
 //
-//                WebDriverManager.chromedriver().setup();
+               WebDriverManager.chromedriver().setup();
 
                 ChromeOptions options = new ChromeOptions();
                 options.setHeadless(true);
-//                driver = new ChromeDriver(options);
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver(options);
+               driver = new ChromeDriver(options);
+                //WebDriverManager.chromedriver().setup();
+                //driver = new ChromeDriver();
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
